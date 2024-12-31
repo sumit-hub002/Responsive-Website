@@ -1,0 +1,899 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailored Academy Training</title>
+
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- StyleSheet -->
+   <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="font-sans bg-gray-100">
+
+  <!-- Navigation Bar -->
+   <header class="fixed top-0 w-full bg-white shadow-lg z-50">
+    <div class="container mx-auto px-6 py-6 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#home">
+        <img src="./Images/new+png+black+white.png" alt="Logo" height="50px" width="150px">
+      </a>
+
+      <!-- Hidden on small screen shown  on large screen -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="font-medium hover:text-red-500 transition duration-300">Home</a>
+        <a href="#service" class="font-medium hover:text-red-500 transition duration-300">Services</a>
+        <a href="#pricing" class="font-medium hover:text-red-500 transition duration-300">Pricing</a>
+        <a href="#meetteam" class="font-medium hover:text-red-500 transition duration-300">Meet the team</a>
+        <a href="#contact" class="font-medium hover:text-red-500 transition duration-300">Contact Us</a>
+      </nav>
+
+      <a href="#" class="hidden md:inline-block px-6 py-2 bg-red-400 text-white font-bold rounded-full hover:bg-red-500 transform hover:scale-105 transition duration-300 font-paragraph">Book Apointment</a>
+
+      <button class="md:hidden text-black hover:text-red-500 transition duration-300" id="menu-toggle">
+        <i class="fas fa-bars fa-2xl"></i>
+      </button>
+    </div>
+    
+
+    <!-- Mobile Navigation Bar Shown on mobile screen hidden on medium and large screen -->
+     <div class="md:hidden bg-white px-6 py-2 space-y-2 hidden" id="mobile-menu">
+        <a href="#home" class="font-medium hover:text-red-500 transition duration-300 block hover:bg-gray-100">Home</a>
+        <a href="#service" class="font-medium hover:text-red-500 transition duration-300 block hover:bg-gray-100">Services</a>
+        <a href="#pricing" class="font-medium hover:text-red-500 transition duration-300 block hover:bg-gray-100">Pricing</a>
+        <a href="#meetteam" class="font-medium hover:text-red-500 transition duration-300 block hover:bg-gray-100">Meet the team</a>
+        <a href="#contact" class="font-medium hover:text-red-500 transition duration-300 block hover:bg-gray-100">Contact Us</a>
+
+        <a href="#" class="inline-block px-6 py-2 bg-red-400 text-white font-bold rounded-full hover:bg-red-500 transform hover:scale-105 transition duration-300 font-paragraph">Book Apointment</a>
+
+     </div>
+   </header>
+
+
+   <!-- Hero Section Carousel -->
+    <section class="h-screen" id="home">
+
+      <!-- Slide Container -->
+       <div class="swiper h-full">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-cover bg-center text-white" style="background-image: url(./Images/Slide-1.jpg);">
+            <div class="flex flex-col justify-center items-center h-full bg-black bg-opacity-50">
+              <h1 class="text-2xl font-medium text-white font-heading">Welcome To</h1>
+              <h1 class="text-6xl font-bold text-white font-heading">Tailored Dog Training</h1>
+              <p class="text-xl mt-4 text-center font-paragraph font-normal w-2/3">We strive to provide our client’s dogs with the best <br>training that modern science has to offer. </p>
+
+              <!-- Two Buttons Creates -->
+               <div class="flex justify-center items-center space-x-6">
+                  <a href="#" class="mt-8 px-4 py-4 bg-red-500 rounded-full hover:bg-inherit hover:border hover:border-red-500 font-medium font-paragraph">Book Training</a>
+                  <a href="#" class="mt-8 px-4 py-4 border border-red-500 hover:bg-red-500 rounded-full font-medium font-paragraph">More Details</a>
+                </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+           <div class="swiper-slide bg-cover bg-center text-white" style="background-image: url(./Images/Slide-2.jpg);">
+            <div class="flex flex-col justify-center items-center h-full bg-black bg-opacity-50">
+              <h1 class="text-2xl font-medium text-white font-heading">Professional</h1>
+              <h1 class="text-6xl font-bold text-white font-heading">Dog Training</h1>
+              <p class="text-xl mt-4 text-center font-paragraph font-normal w-2/3">Before we can choose actual Dog trainer, I believe you must first decide <br>what kind of bond you want to establish with you dog.</p>
+
+              <!-- Two Buttons Creates -->
+               <div class="flex justify-center items-center space-x-6">
+                <a href="#" class="mt-8 px-4 py-4 bg-red-500 rounded-full hover:bg-inherit hover:border hovr:border-red-500 font-medium font-paragraph">Book Training</a>
+                <a href="#" class="mt-8 px-4 py-4 border border-red-500 hover:bg-red-500 rounded-full font-medium font-paragraph">More Details</a>
+               </div>
+            </div>
+           </div>
+
+
+           <!-- Slide-3 -->
+            <div class="swiper-slide bg-cover bg-center text-white" style="background-image: url(./Images/Slide-3.jpg);">
+              <div class="flex flex-col justify-center items-center h-full bg-black bg-opacity-50">
+                <h1 class="text-2xl font-medium text-white font-heading">Trusted by Thousands of</h1>
+                <h1 class="text-6xl font-bold text-white font-heading">Dogs & Their Owners</h1>
+                <p class="text-xl mt-4 text-center font-paragraph font-normal w-2/3">
+                  I truly believe every single one of us raising dogs today share an incredible responsibility in determining how our dogs will view their world.
+                </p>
+
+                <!-- Two Buttons Creates -->
+               <div class="flex justify-center items-center space-x-6">
+                <a href="#" class="mt-8 px-4 py-4 bg-red-500 rounded-full hover:bg-inherit hover:border hovr:border-red-500 font-medium font-paragraph">Book Training</a>
+                <a href="#" class="mt-8 px-4 py-4 border border-red-500 hover:bg-red-500 rounded-full font-medium font-paragraph">More Details</a>
+               </div>
+              </div>
+            </div>
+
+        </div>
+
+        <!-- Next Button -->
+         <div class="swiper-button-next"></div>
+
+         
+         <!-- Prev Button -->
+          <div class="swiper-button-prev"></div>
+
+          
+          <!-- Pagination -->
+           <div class="swiper-pagination"></div>
+
+       </div>
+
+    </section>
+
+
+
+    <!-- Services -->
+     <section class="py-20 bg-white" id="service">
+      <div class="container mx-auto px-0">
+        <h1 class="text-2xl font-medium font-headeing text-center text-red-600">Welcome</h1>
+        <h1 class="text-6xl font-bold font-heading text-center">What We Offer</h1>
+        <p class="text-xl mt-4 text-center font-paragraph font-normal">You'll enjoy knowing our dedicated team will do whetever is needed to keep your pets happy, healthy and safe when you're away from home.</p>
+
+        <!-- Service Container -->
+        <div class="grid xs:grid-cols-1 md:grid-cols-3 gap-8">
+
+          
+           <div class="col-span-1 bg-white mt-14">
+
+            <!-- Image and Text-1 -->
+            <div class="flex justify-end items-center">
+
+              <div class="paragraph px-5">
+                <h1 class="font-heading text-2xl font-bold text-end hover:text-red-500" style="cursor: pointer;">Group Training</h1>
+                <p class="text-sm text-end font-paragraph">Tailored certified dog trainers specialize in behavior.</p>
+              </div>
+
+              <div class="Image">
+                <img src="./Images/Group Training.png" alt="Group Training">
+              </div>
+              
+            </div>
+
+
+            <!-- Image and Text 2 -->
+            <div class="flex justify-end items-center mt-12 mr-5">
+
+              <div class="paragraph px-5">
+                <h1 class="font-heading text-2xl font-bold text-end hover:text-red-500" style="cursor: pointer;">Private Training</h1>
+                <p class="text-sm text-end font-paragraph">We are recommended by veterinarins and animals</p>
+              </div>
+
+              <div class="Image">
+                <img src="./Images/Private training.png" alt=".Private Training">
+              </div>
+
+            </div>
+
+
+            <!-- Image and Text 3 -->
+            <div class="flex justify-end items-center mt-12">
+
+              <div class="paragraph px-5">
+                <h1 class="font-heading text-2xl font-bold text-end hover:text-red-500" style="cursor: pointer;">Virtual Training</h1>
+                <p class="text-sm text-end font-paragraph">We train puppies 8 weeks and older, adults dogs of any age.</p>
+              </div>
+
+              <div class="Image">
+                <img src="./Images/Virtual Training.png" alt=".Virtual Training">
+              </div>
+
+            </div>
+            
+           </div>
+
+           <div class="col-span-1 bg-white">
+            <img src="./Images/Images-6.png" alt="Dog Image" height="100px">
+           </div>
+
+
+
+           <div class="col-span-1 bg-white mt-14">
+
+            <!-- Image and Text-4 -->
+            <div class="flex justify-end items-center">
+
+
+              <div class="Image">
+                <img src="./Images/Puppy Training.png" alt="Group Training">
+              </div>
+              
+              <div class="paragraph px-5">
+                <h1 class="font-heading text-2xl font-bold text-start hover:text-red-500" style="cursor: pointer;">Puppy Training</h1>
+                <p class="text-sm text-start font-paragraph">Private lessons begin with a hands on evaluation of puppy.</p>
+              </div>
+
+            </div>
+
+
+            <!-- Image and Text 5 -->
+            <div class="flex justify-end items-center mt-12 ml-5">
+
+              <div class="Image">
+                <img src="./Images/Sprecialty Program.png" alt=".Private Training">
+              </div>
+
+              <div class="paragraph px-5">
+                <h1 class="font-heading text-2xl font-bold text-start hover:text-red-500" style="cursor: pointer;">Specialty Program</h1>
+                <p class="text-sm text-start font-paragraph">Tailored has excellent training that can help rehabilitate dogs.</p>
+              </div>
+
+
+            </div>
+
+
+            <!-- Image and Text 6 -->
+            <div class="flex justify-end items-center mt-12">
+
+
+              <div class="Image">
+                <img src="./Images/Securtiy Program.png" alt=".Virtual Training">
+              </div>
+
+              <div class="paragraph px-5">
+                <h1 class="font-heading text-2xl font-bold text-start hover:text-red-500" style="cursor: pointer;">Security Program</h1>
+                <p class="text-sm text-start font-paragraph">We use modern management, and classical counter techniques.</p>
+              </div>
+
+
+            </div>
+            
+           </div>
+
+        </div>
+      </div>
+     </section>
+
+
+
+     
+     
+
+
+
+      
+      <!-- Meet Our Team -->
+       <section class="py-20 bg-gray-100" id="meetteam">
+        <div class="container mx-auto px-0">
+          <h1 class="text-2xl font-medium font-headeing text-center text-red-600">Meet</h1>
+           <h1 class="text-6xl font-bold font-heading text-center">Our Team </h1>
+
+          <!-- Members Container -->
+           <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
+
+            <!-- Team Member-1 -->
+            <div class="team-card bg-white rounded-lg shadow-lg">
+              <img src="./Images/1.png" alt="Aman Sehgal" class="pl-14 pt-6 pb-4 rounded-lg brightness-50 hover:brightness-100 hover:scale-105">
+              <div class="pl-4 text-center">
+                <h3 class="text-2xl font-bold text-black mb-2 font-heading hover:text-red-500" style="cursor: pointer;" href="#">Ally Lantis</h3>
+                <p class="mb-2 text-sm font-medium font-paragraph">Owner, Head Trainer & Behavior Consultant</p>
+                <p class="mb-2 text-sm font-normal font-paragraph p-2">Ally Lantis' dog training journey began like many, with a very naughty dog! Working at Pet Food Express as a teenager, she got referred to an excellent positive trainer for assistance with her unruly Border Collie.</p>
+
+                <div class="social-links flex justify-center space-x-4">
+                  <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" target="_blank" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member-2 -->
+            <div class="team-card bg-white rounded-lg shadow-lg">
+              <img src="./Images/2.png" alt="Aman Sehgal" class="pl-14 pt-6 pb-4 rounded-lg brightness-50 hover:brightness-100 hover:scale-105">
+              <div class="pl-4 text-center">
+                <h3 class="text-2xl font-bold text-black mb-2 font-heading hover:text-red-500" style="cursor: pointer;" href="#">Christine Tanner</h3>
+                <p class="mb-2 text-sm font-medium font-paragraph">CPDT-KA | Trainer and Behavior Consultant</p>
+                <p class="mb-2 text-sm font-normal font-paragraph p-2">Christine has been training dogs professionally since 2016. She has received her CPDT-KA certification from the Certification Council for Professional Dog Trainers, and is an AKC evaluator.</p>
+
+                <div class="social-links flex justify-center space-x-4">
+                  <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" target="_blank" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member-3 -->
+            <div class="team-card bg-white rounded-lg shadow-lg">
+              <img src="./Images/3.png" alt="Aman Sehgal" class="pl-14 pt-6 pb-4 rounded-lg brightness-50 hover:brightness-100 hover:scale-105">
+              <div class="pl-4 text-center">
+                <h3 class="text-2xl font-bold text-black mb-2 font-heading hover:text-red-500" style="cursor: pointer;" href="#">Rachelle Carzino</h3>
+                <p class="mb-2 text-sm font-medium font-paragraph">Associate Trainer</p>
+                <p class="mb-2 text-sm font-normal font-paragraph p-2">Rachelle Carzino has been training dogs professionally since 1989 with Sirius Dog Training offering puppy through adult courses in addition to K9 games and CGC prep. Rachelle had also been teaching agility classes since 2000</p>
+
+                <div class="social-links flex justify-center space-x-4">
+                  <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" target="_blank" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member-4 -->
+            <div class="team-card bg-white rounded-lg shadow-lg">
+              <img src="./Images/4.png" alt="Aman Sehgal" class="pl-14 pt-6 pb-4 rounded-lg brightness-50 hover:brightness-100 hover:scale-105">
+              <div class="pl-4 text-center">
+                <h3 class="text-2xl font-bold text-black mb-2 font-heading hover:text-red-500" style="cursor: pointer;" href="#">Ally Lantis</h3>
+                <p class="mb-2 text-sm font-medium font-paragraph">CODT-KA|Associate Trainer</p>
+                <p class="mb-2 text-sm font-normal font-paragraph p-2">Years ago, when Nicole brought her new rescue dog to classes at Tailored, she fell in love with the results and the process of dog training. After months of taking classes and private lessons.</p>
+
+                <div class="social-links flex justify-center space-x-4">
+                  <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" target="_blank" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member-5 -->
+            <div class="team-card bg-white rounded-lg shadow-lg">
+              <img src="./Images/5.png" alt="Aman Sehgal" class="pl-14 pt-6 pb-4 rounded-lg brightness-50 hover:brightness-100 hover:scale-105">
+              <div class="pl-4 text-center">
+                <h3 class="text-2xl font-bold text-black mb-2 font-heading hover:text-red-500" style="cursor: pointer;" href="#">Jessica Steidel</h3>
+                <p class="mb-2 text-sm font-medium font-paragraph">Associate Trainer</p>
+                <p class="mb-2 text-sm font-normal font-paragraph p-2">While working toward her undergraduate degree in psychology, Jessica joined the Santa Cruz Dog Training Club in 2012 to learn from experienced trainers the foundations of dog training.</p>
+
+                <div class="social-links flex justify-center space-x-4">
+                  <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" target="_blank" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member-6 -->
+            <div class="team-card bg-white rounded-lg shadow-lg">
+              <img src="./Images/1.png" alt="Aman Sehgal" class="pl-14 pt-6 pb-4 rounded-lg brightness-50 hover:brightness-100 hover:scale-105">
+              <div class="pl-4 text-center">
+                <h3 class="text-2xl font-bold text-black mb-2 font-heading hover:text-red-500" style="cursor: pointer;" href="#">David Christiansen</h3>
+                <p class="mb-2 text-sm font-medium font-paragraph">Associate Trainer</p>
+                <p class="mb-2 text-sm font-normal font-paragraph p-2">Ally Lantis' dog training journey began like many, with a very naughty dog! Working at Pet Food Express as a teenager, she got referred to an excellent positive trainer for assistance with her unruly Border Collie.</p>
+
+                <div class="social-links flex justify-center space-x-4 pb-4">
+                  <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" target="_blank" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+
+
+           </div>
+        </div>
+       </section>
+
+
+
+       <!-- Pricing Section -->
+        <section class="py-20 bg-white shadow-lg rounded-[40px]" id="pricing">
+          <div class="container mx-auto px-0">
+            <h1 class="text-2xl font-medium font-headeing text-center text-red-500">Our Pricing Plan</h1>
+           <h1 class="text-6xl font-bold font-heading text-center text-black">Best Package</h1>
+
+           <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+
+            <!-- Basic Plan -->
+             <div class="bg-gray-100 shadow-lg rounded-lg p-4">
+              <div class="flex justify-between items-center">
+                <h1 class="text-4xl font-italic font-bold text-black">Basic</h1>
+                <h1 class="text-4xl font-italic font-bold text-black">$29.90</h1>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <h1 class="text-xs font-italic font-normal text-gray-600 pl-2">Most Popular</h1>
+                <h1 class="text-xs font-italic font-normal text-gray-600 pr-6">per month</h1>
+              </div>
+
+              <!-- Training 1 -->
+              <div class="flex justify-start items-center mt-6 space-x-4">
+                <i class="fa-solid fa-check text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-noraml text-black">Home Training</h5>
+              </div>
+
+              <!-- Training 2 -->
+              <div class="flex justify-start items-center mt-1 space-x-4">
+                <i class="fa-solid fa-check text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-normal text-black">Obdience Suggestions</h5>
+              </div>
+              
+              <!-- Training 3 -->
+              <div class="flex justify-start items-center mt-1 space-x-4">
+                <i class="fa-solid fa-xmark text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-normal text-black">Puppy Preschool</h5>
+              </div>
+
+              <!-- Training 4 -->
+              <div class="flex justify-start items-center mt-1 space-x-4">
+                <i class="fa-solid fa-xmark text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-normal text-black">Private Sessions</h5>
+              </div>
+
+              <!-- Training 5 -->
+              <div class="flex justify-start items-center mt-1 space-x-4 mb-6">
+                <i class="fa-solid fa-xmark text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-normal text-black">Group Classes</h5>
+              </div>
+
+
+              <!-- Button -->
+              <div class="flex justify-center items-center  mt-6">
+
+                <a href="#" class="px-16 py-2 bg-red-500 text-2xl font-heading hover:bg-red-700 rounded-full text-center text-white font-medium">Get Started</a>
+              </div>
+              
+             </div>
+
+             
+            <!-- Premium Plan -->
+
+
+            <!-- <div class="bg-red-500 shadow-lg rounded-lg p-4 transform scale-105 transition duration-300" style="cursor: pointer;">
+              <div class="flex justify-between items-center">
+                <h1 class="text-4xl font-italic font-bold text-white">Premium</h1>
+                <h1 class="text-4xl font-italic font-bold text-white">$99.90</h1>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <h1 class="text-xs font-italic font-normal text-white pl-2">Preferred</h1>
+                <h1 class="text-xs font-italic font-normal text-white pr-6">per month</h1>
+              </div>
+
+              <div class="bg-white w-full shadow-lg rounded-lg">
+              <!-- Training 1 -->
+              <!-- <div class="flex justify-start items-center mt-6 space-x-4">
+                <i class="fa-solid fa-check text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-noraml text-black">Home Training</h5>
+              </div> -->
+
+              <!-- Training 2 -->
+              <!-- <div class="flex justify-start items-center mt-1 space-x-4">
+                <i class="fa-solid fa-check text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-normal text-black">Obdience Suggestions</h5>
+              </div> -->
+              
+              <!-- Training 3 -->
+              <!-- <div class="flex justify-start items-center mt-1 space-x-4">
+                <i class="fa-solid fa-check text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-normal text-black">Puppy Preschool</h5>
+              </div> -->
+
+              <!-- Training 4 -->
+              <!-- <div class="flex justify-start items-center mt-1 space-x-4">
+                <i class="fa-solid fa-check text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-normal text-black">Private Sessions</h5>
+              </div> -->
+
+              <!-- Training 5 -->
+              <!-- <div class="flex justify-start items-center mt-1 space-x-4 mb-6">
+                <i class="fa-solid fa-check text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-normal text-black">Group Classes</h5>
+              </div>
+
+            </div> -->
+
+              <!-- Button -->
+              <!-- <div class="flex justify-center items-center  mt-6">
+
+                <a href="#" class="px-16 py-2  bg-red-700 text-2xl font-heading rounded-full text-center text-white font-medium hover:bg-black hover:text-white">Get Started</a>
+              </div>
+              
+             </div>  -->
+             <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-rose-500 to-purple-600 p-0.5 transition-all duration-500 hover:scale-[1.02] hover:shadow-xl">
+              <div class="relative rounded-[14px] bg-gradient-to-br from-rose-500/10 to-purple-600/10 backdrop-blur-xl">
+                <!-- Header Section -->
+                <div class="p-6 space-y-2">
+                  <div class="flex justify-between items-center">
+                    <h2 class="text-4xl font-bold bg-gradient-to-r from-white to-gray-100 bg-clip-text text-transparent">
+                      Premium
+                    </h2>
+                    <div class="text-right">
+                      <span class="text-4xl font-bold text-white">$99.90</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center text-gray-200/80">
+                    <span class="text-sm">Preferred</span>
+                    <span class="text-sm">per month</span>
+                  </div>
+                </div>
+            
+                <!-- Features Section -->
+                <div class="bg-white/95 rounded-xl mx-3 mb-3 p-6">
+                  <ul class="space-y-4">
+                    <li class="flex items-center space-x-3">
+                      <div class="flex-shrink-0">
+                        <div class="h-6 w-6 rounded-full bg-gradient-to-r from-rose-500 to-purple-600 flex items-center justify-center">
+                          <svg class="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="text-lg text-gray-800 font-medium">Home Training</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                      <div class="flex-shrink-0">
+                        <div class="h-6 w-6 rounded-full bg-gradient-to-r from-rose-500 to-purple-600 flex items-center justify-center">
+                          <svg class="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="text-lg text-gray-800 font-medium">Obedience Suggestions</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                      <div class="flex-shrink-0">
+                        <div class="h-6 w-6 rounded-full bg-gradient-to-r from-rose-500 to-purple-600 flex items-center justify-center">
+                          <svg class="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="text-lg text-gray-800 font-medium">Puppy Preschool</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                      <div class="flex-shrink-0">
+                        <div class="h-6 w-6 rounded-full bg-gradient-to-r from-rose-500 to-purple-600 flex items-center justify-center">
+                          <svg class="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="text-lg text-gray-800 font-medium">Private Sessions</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                      <div class="flex-shrink-0">
+                        <div class="h-6 w-6 rounded-full bg-gradient-to-r from-rose-500 to-purple-600 flex items-center justify-center">
+                          <svg class="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="text-lg text-gray-800 font-medium">Group Classes</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+             
+            <!-- Master Plan -->
+            <div class="bg-gray-100 shadow-lg rounded-lg p-4">
+              <div class="flex justify-between items-center">
+                <h1 class="text-4xl font-italic font-bold text-black">Master</h1>
+                <h1 class="text-4xl font-italic font-bold text-black">$49.90</h1>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <h1 class="text-xs font-italic font-normal text-gray-600 pl-2">Good Choice</h1>
+                <h1 class="text-xs font-italic font-normal text-gray-600 pr-6">per month</h1>
+              </div>
+
+              <!-- Training 1 -->
+              <div class="flex justify-start items-center mt-6 space-x-4">
+                <i class="fa-solid fa-check text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-noraml text-black">Home Training</h5>
+              </div>
+
+              <!-- Training 2 -->
+              <div class="flex justify-start items-center mt-1 space-x-4">
+                <i class="fa-solid fa-check text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-normal text-black">Obdience Suggestions</h5>
+              </div>
+              
+              <!-- Training 3 -->
+              <div class="flex justify-start items-center mt-1 space-x-4">
+                <i class="fa-solid fa-check text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-normal text-black">Puppy Preschool</h5>
+              </div>
+
+              <!-- Training 4 -->
+              <div class="flex justify-start items-center mt-1 space-x-4">
+                <i class="fa-solid fa-xmark text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-normal text-black">Private Sessions</h5>
+              </div>
+
+              <!-- Training 5 -->
+              <div class="flex justify-start items-center mt-1 space-x-4 mb-6">
+                <i class="fa-solid fa-xmark text-xl items-center pt-2 text-black"></i>
+                <h5 class="text-xl font-normal text-black">Group Classes</h5>
+              </div>
+
+
+              <!-- Button -->
+              <div class="flex justify-center items-center  mt-6">
+
+                <a href="#" class="px-16 py-2 bg-red-500 text-2xl font-heading hover:bg-red-700 rounded-full text-center text-white font-medium">Get Started</a>
+              </div>
+              
+             </div>
+
+             
+
+           </div>
+           
+          </div>
+        </section>
+
+        <!-- Our News & Blogs -->
+      <section class="py-20 bg-sky-100 mt-20">
+        <div class="container mx-auto px-0">
+          <h1 class="text-2xl font-medium font-headeing text-center text-orange-500">Our Blog & Tips</h1>
+           <h1 class="text-6xl font-bold font-heading text-center">News & Blog</h1>
+
+           <!-- Blog Container -->
+          <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+
+            <!-- Blog 1 -->
+            <div class="blog-card bg-white rounded-lg shadow-lg">
+              <img src="./Images/Blog-1.1.jpg" alt="blog images 1" class="p-4 rounded-lg">
+              <h1 class="font-heading text-2xl font-bold pl-4 text-black hover:text-orange-500" style="cursor: pointer;">How to Socialize My Dog?</h1>
+              <br>
+              <h1 class="text-xs font-paragraph font-normal pl-4 pt-2">September 16,2024</h1>
+              <p class="text-sm font-paragraph font-normal pl-4 pt-4">Believe it or not, that is actually a bit of a trick question! This is due to the fact that there is a socialization “window” that closes, and thus the term “socialization” actually only applies to puppies within a certain age range.</p>
+
+              <a href="#" class="text-sm font-heading font-bold p-4 text-black hover:text-orange-500">Read More...</a>
+            </div>
+
+
+            <!-- Blog 2 -->
+            <div class="blog-card bg-white rounded-lg shadow-lg transform scale-105 transition duration-300">
+              <img src="./Images/Bolg-1.2.jpg" alt="blog images 1" class="p-4 rounded-lg">
+              <h1 class="font-heading text-2xl font-bold pl-4 text-black hover:text-orange-500" style="cursor: pointer;">Chew-tiful Ways to Keep Your Pup Happy</h1>
+              <h1 class="text-xs font-paragraph font-normal pl-4 pt-2">August 14,2019</h1>
+              <p class="text-sm font-paragraph font-normal pl-4 pt-4">Chewing is an innate need for most canines. Puppies need to chew because they are teething and they explore the world with their mouths, much like human infants! Adolescent dogs need to chew as their teeth are setting.</p>
+
+              <a href="#" class="text-sm font-heading font-bold p-4 text-black hover:text-orange-500">Read More...</a>
+            </div>
+
+
+            <!-- Blog 3 -->
+            <div class="blog-card bg-white rounded-lg shadow-lg">
+              <img src="./Images/Blog-1.3.jpg" alt="blog images 1" class="p-4 rounded-lg">
+              <h1 class="font-heading text-2xl font-bold pl-4 text-black hover:text-orange-500" style="cursor: pointer;">Vaccine Safety: Addressing Common Concerns</h1>
+              <h1 class="text-xs font-paragraph font-normal pl-4 pt-2">September 19,2017</h1>
+              <p class="text-sm font-paragraph font-normal pl-4 pt-4">At Tailored Dog Training, we adhere by the American Veterinarian Medical Association Guidelines. Have at least 1 vaccine given administered by a liscened veterinarian AFTER 7 weeks of age as sooner will be blocked.</p>
+
+              <a href="#" class="text-sm font-heading font-bold p-4 text-black hover:text-orange-500">Read More...</a>
+            </div>
+
+            <!-- Blog 4 -->
+            <div class="blog-card bg-white rounded-lg shadow-lg">
+              <img src="./Images/Blog-1.4.jpg" alt="blog images 1" class="p-4 rounded-lg">
+              <h1 class="font-heading text-2xl font-bold pl-4 text-black hover:text-orange-500" style="cursor: pointer;">Mastering Potty Training: Common Challenge and Solutions</h1>
+              <br>
+              <h1 class="text-xs font-paragraph font-normal pl-4 pt-2">February 27,2017</h1>
+              <p class="text-sm font-paragraph font-normal pl-4 pt-4">There are many different ways to potty train a puppy/dog. However, no matter what method you choose, having your puppy on a schedule, feeding your puppy a nutritious food and supervising your puppy are three very important aspects of successful potty training.</p>
+
+              <a href="#" class="text-sm font-heading font-bold p-4 text-black hover:text-orange-500">Read More...</a>
+            </div>
+
+
+            <!-- Blog 5 -->
+            <div class="blog-card bg-white rounded-lg shadow-lg">
+              <img src="./Images/Blog-1.5.jpg" alt="blog images 1" class="p-4 rounded-lg">
+              <h1 class="font-heading text-2xl font-bold pl-4 text-black hover:text-orange-500" style="cursor: pointer;">Stop the Begging: A to Training Your Dog</h1>
+              <br>
+              <h1 class="text-xs font-paragraph font-normal pl-4 pt-2">February 27,2017</h1>
+              <p class="text-sm font-paragraph font-normal pl-4 pt-4">One of the topic requests I got recently was about dogs begging for food at the table. This has been a contentious issue in my household between my husband and I for a long time! Begging is a learned behavior. Dogs beg only because  we have shown them that it works.</p>
+
+              <a href="#" class="text-sm font-heading font-bold p-4 text-black hover:text-orange-500">Read More...</a>
+            </div>
+
+            <!-- Blog 6 -->
+            <div class="blog-card bg-white rounded-lg shadow-lg">
+              <img src="./Images/Blog-1.6.jpg" alt="blog images 1" class="p-4 rounded-lg">
+              <h1 class="font-heading text-2xl font-bold pl-4 text-black hover:text-orange-500" style="cursor: pointer;">Building Trust: The Value of Pet Professional Referrals</h1>
+              <br>
+              <h1 class="text-xs font-paragraph font-normal pl-4 pt-2">February 27,2017</h1>
+              <p class="text-sm font-paragraph font-normal pl-4 pt-4">Jeremy Waugh, one of my associate trainers, offers quaility pet sitting in his home. He also is able to provide training at an additional fee. Space is limited as he only takes 3 pet sitting dogs at a time. Rate starts at $60 a night. Rate starts at $60 a night.</p>
+
+              <a href="#" class="text-sm font-heading font-bold p-4 text-black hover:text-orange-500">Read More...</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+        <!-- Client Testimonials -->
+        <section class="bg-gray-100 flex items-center justify-center min-h-screen mt-10">
+          <div class="w-full mx-auto p-6 bg-gray-100">
+            <h2 class="text-5xl font-bold mb-6 text-black font-heading ml-16">Here from Our Happy <br>Pet Owners</h2>
+        
+            <!-- Testimonial Container -->
+            <div id="testimonialCarousel" class="relative bg-transition rounded-3xl p-6">
+        
+              <!-- Testimonial-1 -->
+              <div class="testimonial active shadow-lg rounded-full bg-white items-center">
+                <div class="w-1/3 pr-4">
+                  <img src="./Images/Client-1.png" alt="Client-1" class="rounded-full p-6">
+                </div>
+        
+                <div class="w-2/3 pr-4">
+                  <h2 class="text-4xl font-bold mb-4 font-heading">Best Group Training</h2>
+                  <p class="mb-4 text-xl font-paragraph">Our dog, Max, absolutely loved group training! 🐶 The trainer was patient and knowledgeable, and the other dogs were well-behaved. 🐕 Max learned basic commands like sit, stay, and come, and he's much more confident on walks now. We highly recommend this training program to anyone looking to improve their dog's behavior. 👍
+                  </p>
+                  <p class="font-bold">David Warner</p>
+                  <p class="text-gray-500">Dog Owner</p>
+                </div>
+        
+              </div>
+        
+              <!-- Testimonial-2 -->
+             <div class="testimonial shadow-lg rounded-full bg-white items-center">
+                <div class="w-1/3 pr-4">
+                  <img src="./Images/Client-2.png" alt="Client-1" class="rounded-full p-6">
+                </div>
+        
+                <div class="w-2/3 pr-4">
+                  <h2 class="text-4xl font-bold mb-4 font-heading">Perfect Private Session</h2>
+                  <p class="mb-4 text-xl font-paragraph">Our dog, Max, had the best private training experience! 🐶 The trainer was incredibly patient and knowledgeable, and they tailored the sessions to Max's specific needs. He learned new commands quickly and is now. We highly recommend this private training program to anyone looking to improve their dog's behavior. 👍
+                  </p>
+                  <p class="font-bold">Golden Retriever</p>
+                  <p class="text-gray-500">Dog Owner</p>
+                </div>
+        
+              </div>
+        
+              <!-- Testimonial-3 -->
+              <div class="testimonial shadow-lg rounded-full bg-white items-center">
+                <div class="w-1/3 pr-4">
+                  <img src="./Images/Client-3.png" alt="Client-1" class="rounded-full p-6">
+                </div>
+        
+                <div class="w-2/3 pr-4">
+                  <h2 class="text-4xl font-bold mb-4 font-heading">Outstanding Security Program
+                  </h2>
+                  <p class="mb-4 text-xl font-paragraph">Our dog, Luna, was struggling with anxiety and reactivity. 🐶 After completing the security program, she's become much calmer and more confident around strangers. The trainer was excellent at teaching. We're so grateful for the results and highly recommend this program to any dog owner facing similar challenges. 👍
+                  </p>
+                  <p class="font-bold">Alex Carry</p>
+                  <p class="text-gray-500">Dog Owner</p>
+                </div>
+        
+              </div>
+        
+              <!-- Testimonial-4 -->
+              <div class="testimonial shadow-lg rounded-full bg-white items-center">
+                <div class="w-1/3 pr-4">
+                  <img src="./Images/Client-4.png" alt="Client-1" class="rounded-full p-6">
+                </div>
+        
+                <div class="w-2/3 pr-4">
+                  <h2 class="text-4xl font-bold mb-4 font-heading">Best Puppy Training</h2>
+                  <p class="mb-4 text-xl font-paragraph">"My puppy, Dazy, has become a well-behaved companion thanks to Tailored Dog Training, amazing training methods! 🐶🐾 They were patient, knowledgeable, and made the process fun for both of us. Highly recommend! 👍🌟 I'm so grateful for their help in raising a happy and well-trained dog." 😊
+                  </p>
+                  <p class="font-bold">Perry Richard</p>
+                  <p class="text-gray-500">Dog Owner</p>
+                </div>
+        
+              </div>
+        
+              <!-- Testimonial-5 -->
+              <div class="testimonial shadow-lg rounded-full bg-white items-center">
+                <div class="w-1/3 pr-4">
+                  <img src="./Images/Client-5.png" alt="Client-1" class="rounded-full p-6">
+                </div>
+        
+                <div class="w-2/3 pr-4">
+                  <h2 class="text-4xl font-bold mb-4 font-heading">Best Virtual Training</h2>
+                  <p class="mb-4 text-xl font-paragraph">"I was skeptical about virtual training, but  exceeded my expectations! 💻🐶 Their clear instructions, video demonstrations, and personalized feedback helped my puppy learn quickly. Highly recommend for busy pet owners!" 👍🌟 Thanks for Tailored Dog Training. Feedback helped my puppy learn quickly.High recommend for busy pet owners</p>
+                  <p class="font-bold">Herry Williamson</p>
+                  <p class="text-gray-500">Dog Owner</p>
+                </div>
+        
+              </div>
+        
+            </div>
+        
+        
+            <!-- Navigation button -->
+             <div class="mt-4 flex justify-center">
+              <button onclick="changeTestimonial(-1)" class="mr-2 p-2 rounded-full border border-gray-500 hover:bg-gray-200">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+        
+              <button onclick="changeTestimonial(1)" class="mr-2 p-2 rounded-full border border-gray-500 hover:bg-gray-200">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+             </div>
+        
+          </div>
+        </section>
+        
+
+
+
+         <!-- Footer -->
+          <footer class="pt-20 bg-blue-800" id="contact">
+              <div class="container mx-auto">
+                  <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                      <div class="flex flex-col items-start">
+                          <h3 class="text-xl font-bold font-heading text-yellow-500">Tailored Dog Training</h3>
+                          <p class="mt-4 text-white font-medium font-paragraph text-sm">4475 K Treat Blvd, Concord, CA</p>
+                          <p class="text-white font-medium font-paragraph text-sm">925-471-0040</p>
+                          <p class="text-white font-medium font-paragraph text-sm">ally.tailoreddogtraining@gmail.com</p>
+                          <div class="mt-4 space-x-6 texwhite">
+                              <a href="#" class="text-white hover:text-black"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#" class="text-white hover:text-black"><i class="fab fa-twitter"></i></a>
+                              <a href="#" class="text-white hover:text-black"><i class="fab fa-instagram"></i></a>
+                              <a href="#" class="text-white hover:text-black"><i class="fab fa-youtube"></i></a>
+                          </div>
+                      </div>
+                      <div>
+                          <h2 class="text-xl font-bold font-heading text-yellow-500">Quick Links</h2>
+                          <ul class="mt-4">
+                              <li><a href="#" class="text-white hover:text-yellow-500">Animal Rescue</a></li>
+                              <li><a href="#" class="text-white hover:text-yellow-500">Group Classes</a></li>
+                              <li><a href="#" class="text-white hover:text-yellow-500">Animal Hospital</a></li>
+                              <li><a href="#" class="text-white hover:text-yellow-500">Street Animal Feeding</a></li>
+                              <li><a href="#" class="text-white hover:text-yellow-500">Homepage 01</a></li>
+                              <li><a href="#" class="text-white hover:text-yellow-500">Pricing Table</a></li>
+                          </ul>
+                      </div>
+                      <div>
+                          <h2 class="text-xl font-bold font-heading text-yellow-500">Opening Hours</h2>
+                          <ul class="mt-4 text-white">
+                            <ul class="mt-4 text-white">
+                              <li>Monday: 8.00 - 21.00</li>
+                              <li>Tuesday: 8.00 - 21.00</li>
+                              <li>Thursday: 8.00 - 21.00</li>
+                              <li>Friday: 8.00 - 21.00</li>
+                              <li>Saturday: 8.00 - 21.00</li>
+                              <li>Sunday: 8.00 - 21.00</li>
+                          </ul>
+                      </div>
+                      <div>
+                          <h2 class="text-xl font-bold font-heading text-yellow-500">Subscribe to our newsletter</h2>
+                          <form class="mt-4">
+                              <input type="email" placeholder="Type your email" class="border rounded-md px-4 py-2">
+
+                              <button class="bg-yellow-500 hover:bg-yellow-700 text-white px-4 py-2 rounded-md mt-2 font-bold">Subscribe Now</button>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="mt-8 border-t border-gray-700 py-4">
+                      <p class="text-sm text-center text-white">Support | Terms & Conditions | Privacy Policy | Career</p>
+                      <p class="text-sm text-center text-white">Copyright © 2024. All Rights Reserved.</p>
+                  </div>
+              </div>
+          </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- AOS.js -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- javaScript -->
+  <script src="script.js"></script>
+
+  <!-- Config.js -->
+   <script src="config.js"></script>
+</body>
+</html>

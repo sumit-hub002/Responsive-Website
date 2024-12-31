@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.testimonial{
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+
+
+
+.testimonial.active{
+  display: flex;
+  opacity: 1;
+}
+
+
+.bg-transition{
+  transition: background-color 0.5s ease-in-out;
+}
